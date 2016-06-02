@@ -1,0 +1,74 @@
+sw_volume: 1
+audio_device_state:1:My Pulse Output
+audio_device_state:1:my_fifo
+state: play
+current: 30
+time: 55.182000
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:Radiohead/Amnesiac/Packt Like Sardines in a Crushd Tin Box.mp3
+1:Radiohead/Amnesiac/Pyramid Song.mp3
+2:Radiohead/Amnesiac/Pulk, Pull Revolving Doors.mp3
+3:Radiohead/Amnesiac/You And Whose Army.mp3
+4:Radiohead/Amnesiac/I Might Be Wrong.mp3
+5:Radiohead/Amnesiac/Knives Out.mp3
+6:Radiohead/Amnesiac/Morning Bell, Amnesiac.mp3
+7:Radiohead/Amnesiac/Dollars and Cents.mp3
+8:Radiohead/Amnesiac/Hunting Bears.mp3
+9:Radiohead/Amnesiac/Like Spinning Plates.mp3
+10:Radiohead/Amnesiac/Life in a Glasshouse.mp3
+11:Radiohead/Amnesiac/The Amazing Sounds of Orgy.mp3
+12:Radiohead/Amnesiac/Trans-Atlantic Drawl.mp3
+13:Radiohead/Amnesiac/Fast-Track.mp3
+14:Radiohead/Amnesiac/Kinetic.mp3
+15:Radiohead/Amnesiac/Worrywort.mp3
+16:Radiohead/Amnesiac/Fog.mp3
+17:Radiohead/Amnesiac/Cuttooth.mp3
+18:Radiohead/Amnesiac/Life In A Glasshouse (Full Length).mp3
+19:Radiohead/In Rainbows/15 Step.mp3
+20:Radiohead/In Rainbows/Bodysnatchers.mp3
+21:Radiohead/In Rainbows/Nude.mp3
+22:Radiohead/In Rainbows/Weird Fishes, Arpeggi.mp3
+23:Radiohead/In Rainbows/All I Need.mp3
+24:Radiohead/In Rainbows/Faust Arp.mp3
+25:Radiohead/In Rainbows/Reckoner.mp3
+26:Radiohead/In Rainbows/House Of Cards.mp3
+27:Radiohead/In Rainbows/Jigsaw Falling Into Place.mp3
+28:Radiohead/In Rainbows/Videotape.mp3
+29:Radiohead/In Rainbows/Mk1.mp3
+30:Radiohead/In Rainbows/Down Is The New Up.mp3
+31:Radiohead/In Rainbows/Go Slowly.mp3
+32:Radiohead/In Rainbows/Mk2.mp3
+33:Radiohead/In Rainbows/Last Flowers.mp3
+34:Radiohead/In Rainbows/Up On The Ladder.mp3
+35:Radiohead/In Rainbows/Bangers + Mash.mp3
+36:Radiohead/In Rainbows/4 Minute Warning.mp3
+37:Radiohead/Kid A/Everything In Its Right Place.mp3
+38:Radiohead/Kid A/Kid A.mp3
+39:Radiohead/Kid A/The National Anthem.mp3
+40:Radiohead/Kid A/How To Disappear Completely.mp3
+41:Radiohead/Kid A/Treefingers.mp3
+42:Radiohead/Kid A/Optimistic.mp3
+43:Radiohead/Kid A/In Limbo.mp3
+44:Radiohead/Kid A/Idioteque.mp3
+45:Radiohead/Kid A/Morning Bell.mp3
+46:Radiohead/Kid A/Motion Picture Soundtrack.mp3
+47:Pilot Red Sun/Achievements/pilotredsun - Achievement - 01 greetings.mp3
+48:Pilot Red Sun/Achievements/pilotredsun - Achievement - 02 fat cat.mp3
+49:Pilot Red Sun/Achievements/pilotredsun - Achievement - 03 casino night.mp3
+50:Pilot Red Sun/Achievements/pilotredsun - Achievement - 04 warsaw.mp3
+51:Pilot Red Sun/Achievements/pilotredsun - Achievement - 05 canals.mp3
+52:Pilot Red Sun/Achievements/pilotredsun - Achievement - 06 sadpad.mp3
+53:Pilot Red Sun/Achievements/pilotredsun - Achievement - 07 8-train.mp3
+54:Pilot Red Sun/Achievements/pilotredsun - Achievement - 08 bodybuilder.mp3
+55:Pilot Red Sun/Achievements/pilotredsun - Achievement - 09 funny animals.mp3
+56:Pilot Red Sun/Achievements/pilotredsun - Achievement - 10 snow day.mp3
+57:Pilot Red Sun/Achievements/pilotredsun - Achievement - 11 deathly.mp3
+58:Pilot Red Sun/Achievements/pilotredsun - Achievement - 12 thanks.mp3
+playlist_end

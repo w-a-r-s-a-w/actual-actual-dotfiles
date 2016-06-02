@@ -1,0 +1,31 @@
+shell sudo mount /dev/sdb1 /media/usb
+shell cp 
+open_with 
+open_with mpv
+find feh
+open_with meh
+open_with feh
+delete
+shell 
+shell delete %s
+open_with bash
+shell remove %s
+shell rm %s
+open_with sxiv -a
+shell  %s
+search ninja
+shell sqiv -a %s
+shell sxiv -a %s
+shell uguush -u -o 0x0 %s
+search rainbow
+search down
+shell uguush -u %s
+open_with 1
+find 
+open_with 0
+open_with 2
+shell uguush -o 0x0 -u %s
+shell unzip %s
+search pic
+search wall
+shell hsetroot -full %s
