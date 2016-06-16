@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <gconf>
-	<entry name="enabled" mtime="1463500224" type="bool" value="true"/>
-	<entry name="needs_terminal" mtime="1463500224" type="bool" value="false"/>
-	<entry name="command" mtime="1463500224" type="string">
-		<stringvalue>/home/pouncelciot/Downloads/Telegram/Telegram -- %s</stringvalue>
+	<entry name="enabled" mtime="1466087997" type="bool" value="true"/>
+	<entry name="needs_terminal" mtime="1466087997" type="bool" value="false"/>
+	<entry name="command" mtime="1466087997" type="string">
+		<stringvalue>/home/pouncelciot/docs/prog/telegram/Telegram/Telegram -- %s</stringvalue>
 	</entry>
 </gconf>

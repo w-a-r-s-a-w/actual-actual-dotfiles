@@ -1,30 +1,35 @@
 #! /bin/sh
 
-bspc config border_width         4
-bspc config window_gap           50
-bspc config top_padding		 24
+sxhkd &
 
-bspc config split_ratio          0.52
-bspc config borderless_monocle   true
-bspc config gapless_monocle      true
-bspc config focus_by_distance    true
-bspc config history_aware_focus  true
-bspc config normal_border_color "#292b3c"
-bspc config active_border_color "#3f3b48"
-bspc config focused_border_color "#3f3b48"
-bspc config presel_border_color "#292b3c"
-bspc config urgent_border_color "#292b3c"
-bspc config focused_locked_border_color "#292b3c"
+bspc monitor -d www. term steam chat music misc misc
 
-bspc monitor -d 'www.' 'shell' 'games' 'chat' 'etc.'
+bspc config border_width         2
+bspc config window_gap           6
+bspc config top_padding		 30
 
-bspc rule -a Gimp desktop=^8 state=floating follow=on
-bspc rule -a Icecat desktop=^1
-bspc rule -a mpv state=floating
-bspc rule -a feh state=floating
-bspc rule -a Kupfer.py focus=on
-bspc rule -a Screenkey manage=off
-bspc rule -a org-bear-Launcher desktop=^5 state=floating
-bspc rule -a Steam.exe desktop=^3 state=floating
+# Visual options
+bspc config split_ratio         0.50
+bspc config borderless_monocle  true
+bspc config gapless_monocle     true
+bspc config focus_follows_pointer true
+bspc config auto_alternate true
+bspc config auto_cancel true
+bspc config normal_border_color "#1F1F1F"
+bspc config active_border_color "#1F1F1F"
+bspc config focused_border_color "#6C887A"
+bspc config presel_border_color "#1F1F1F"
+bspc config urgent_border_color "#A54242"
+bspc config focused_locked_border_color "#6C887A"
+# bspc config normal_frame_opacity 0.0
+# bspc config focused_frame_opacity 0.1
 
-PANEL_FIFO="/tmp/panel-fifo" panel &
+bspc rule -a Icecat* desktop='^1' state=fullscreen
+bspc rule -a URxvt* desktop='^2' state=floating
+bspc rule -a Steam.exe desktop='^3' state=floating
+bspc rule -a telegram desktop='^4' state=pseudo_tiled
+bspc rule -a discord desktop='^4' state=pseudo_tiled
+bspc rule -a Spotify desktop='^5' state=floating
+bspc rule -a Gimp* desktop='^7' state=fullscreen
+
+tint2 &

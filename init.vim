@@ -1,1 +1,0 @@
-/home/pouncelciot/.vimrc

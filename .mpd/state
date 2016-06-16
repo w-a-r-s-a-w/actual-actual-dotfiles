@@ -1,9 +1,9 @@
-sw_volume: 1
+sw_volume: 0
 audio_device_state:1:My Pulse Output
 audio_device_state:1:my_fifo
 state: play
-current: 30
-time: 55.182000
+current: 52
+time: 120.070000
 random: 0
 repeat: 0
 single: 0
@@ -71,4 +71,16 @@ playlist_begin
 56:Pilot Red Sun/Achievements/pilotredsun - Achievement - 10 snow day.mp3
 57:Pilot Red Sun/Achievements/pilotredsun - Achievement - 11 deathly.mp3
 58:Pilot Red Sun/Achievements/pilotredsun - Achievement - 12 thanks.mp3
+59:Carmen Miranda's Ghost/Carmen Miranda's Ghost 01 - Carmen Miranda's Ghost_HIGH.m4a
+60:Carmen Miranda's Ghost/Carmen Miranda's Ghost 02 - Dawson's Christian_HIGH.m4a
+61:Carmen Miranda's Ghost/Carmen Miranda's Ghost 03 - Good Ship Manatee_HIGH.m4a
+62:Carmen Miranda's Ghost/Carmen Miranda's Ghost 04 - Bomber_HIGH.m4a
+63:Carmen Miranda's Ghost/Carmen Miranda's Ghost 05 - Some Kind of Hero_HIGH.m4a
+64:Carmen Miranda's Ghost/Carmen Miranda's Ghost 07 - Guardians_HIGH.m4a
+65:Carmen Miranda's Ghost/Carmen Miranda's Ghost 06 - Spaceman's Dilemma_HIGH.m4a
+66:Carmen Miranda's Ghost/Carmen Miranda's Ghost 08 - One Last Battle_HIGH.m4a
+67:Carmen Miranda's Ghost/Carmen Miranda's Ghost 09 - New Sins For Old_HIGH.m4a
+68:Carmen Miranda's Ghost/Carmen Miranda's Ghost 10 - Space Hero_HIGH.m4a
+69:Carmen Miranda's Ghost/Carmen Miranda's Ghost 11 - Sam Jones_HIGH.m4a
+70:Carmen Miranda's Ghost/Carmen Miranda's Ghost 12 - Spacer's Home_HIGH.m4a
 playlist_end

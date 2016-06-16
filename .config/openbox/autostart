@@ -15,5 +15,6 @@
 # If you want to use XFCE config tools...
 #
 #xfce-mcs-manager &
-hsetroot -full ~/Pictures/Wallpaper/grim.jpg
+hsetroot -full ~/pics/wall/grim.jpg
 tint2
+sxhkd

@@ -20,7 +20,7 @@
     <focusDelay>0</focusDelay>
     <!-- when followMouse is enabled, the mouse must be inside the window for
        this many milliseconds (1000 = 1 sec) before moving focus to it -->
-    <raiseOnFocus>yes</raiseOnFocus>
+    <raiseOnFocus>no</raiseOnFocus>
     <!-- when followMouse is enabled, and a window is given focus by moving the
        mouse into it, also raise the window -->
   </focus>
@@ -43,7 +43,7 @@
   </placement>
   <theme>
     <name>yellow</name>
-    <titleLayout>LIMC</titleLayout>
+    <titleLayout>L</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -323,7 +323,7 @@
         <command>urxvtc -e zsh -c tmux attach</command>
       </action>
     </keybind>
-    <keybind key="W-d">
+    <!-- <keybind key="W-d">
       <action name="Execute">
         <name>dmenu</name>
         <command>keybinds dmenu</command>
@@ -381,12 +381,12 @@
         <command>keybinds minify</command>
       </action>
     </keybind>
-    <!-- <keybind key="W-U"> -->
-    <!--   <action name="Execute"> -->
-    <!--     <name>Take Screenshot</name> -->
-    <!--     <command>scrot</command> -->
-    <!--   </action> -->
-    <!-- </keybind> -->
+    <keybind key="W-U">
+      <action name="Execute">
+        <name>Take Screenshot</name>
+        <command>scrot</command>
+      </action>
+    </keybind> 
     <keybind key="A-1">
       <action name="Execute">
         <name>Move window to corner</name>
@@ -470,7 +470,7 @@
         <name>Change to random wallpaper</name>
         <command>keybinds brightnessup</command>
       </action>
-    </keybind>
+    </keybind> -->
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
@@ -732,32 +732,36 @@
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
   <applications>
-    <application name="mpv">
-      <desktop>all</desktop>
-      <maximized>no</maximized>
-      <decor>yes</decor>
-      <layer>above</layer>
-    </application>
     <application name="tint2">
       <desktop>all</desktop>
       <layer>above</layer>
     </application>
-    <application name="Music">
-      <desktop>all</desktop>
-      <maximized>no</maximized>
-      <decor>no</decor>
-      <layer>above</layer>
-      <position force="yes">
-        <x>1670</x>
-        <y>820</y>
-      </position>
+    <application class="Icecat*">
+      <desktop>1</desktop>
+      <focus>no</focus>
     </application>
     <application class="Firefox*">
       <desktop>1</desktop>
       <focus>no</focus>
     </application>
-    <application class="Gimp*">
+    <application class="URxvt">
+      <desktop>2</desktop>
+      <focus>no</focus>
+    </application>
+    <application class="Steam.exe">
+      <desktop>3</desktop>
+      <focus>no</focus>
+    </application>
+    <application class="telegram">
       <desktop>4</desktop>
+      <focus>no</focus>
+    </application>
+    <application class="Spotify">
+      <desktop>5</desktop>
+      <focus>no</focus>
+    </application>
+    <application class="Gimp*">
+      <desktop>7</desktop>
       <focus>no</focus>
     </application>
   </applications>

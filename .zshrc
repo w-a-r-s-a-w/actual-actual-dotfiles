@@ -79,8 +79,8 @@ fi
 autoload -Uz colors && colors
 
 NEWLINE=$'\n'
-
-PROMPT="%{%F{yellow}« %~ »%f%}${NEWLINE}%{%B%F{blue}%}> %{%f%b%}"
+PROMPT="%{%B%F{white}%}#!%0/%{%f%b%}${NEWLINE}%"
+#{%B%F{white}%}# %{%f%b%}"
 
 # Syntax Highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -89,14 +89,15 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 PATH=$PATH:/home/pouncelciot/bin
 
 # Aliases
-alias steam-wine='WINEDEBUG=-all wine ~/.local/share/wineprefixes/steam/drive_c/Program\ Files\ \(x86\)/Steam/Steam.exe &>/dev/null &'
+# alias steam-wine='WINEDEBUG=-all wine ~/.local/share/wineprefixes/steam/drive_c/Program\ Files\ \(x86\)/Steam/Steam.exe &>/dev/null &'
 alias ls='ls --color=auto'
+alias lsp='ls++'
 alias cp='cp -iv'
 alias mv='mv -iv'
-alias rm='rm -iv'
+alias rm='rm -Iv'
 alias mkdir='mkdir -v'
-alias grep='grep --color=auto'
-alias byond='WINEARCH=win32 WINEPREFIX=$HOME/.local/share/wineprefixes/byond WINEDEBUG=-all wine "C:/Program Files/Byond/bin/byond.exe"'
+alias grep='grep -Pi --color=auto'
+alias vim='nvim'
 
 # Temporary reminder (until I memorize it)
 #echo "Press M-b and M-f to jump words (respectively backwards and forwards) disable on .zshrc when I memorize this"
