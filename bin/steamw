@@ -1,0 +1,7 @@
+# script incomplete
+
+#!/bin/bash
+export WINEARCH=win32
+export WINEPREFIX=$HOME/.wine32_steam/
+export WINEDEBUG=-all
+wine "C:/Program Files/Steam/Steam.exe"

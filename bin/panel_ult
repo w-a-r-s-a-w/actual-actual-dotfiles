@@ -1,0 +1,68 @@
+#!/bin/bash
+# click click
+AC='%{A:'			# start click area
+AB=':}'				# end click area cmd
+AE='%{A}'			# end click area
+fg="%{F#FFc2c2b0}"
+border="%{F#FF6688aa}"
+bg="%{F#FF222222}"
+spec1="%{F#FF6688aa}"
+spec2="%{F#FF8181a6}"
+spec3="%{F#FF8f6f8f}"
+glyph='-wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1'
+font='-misc-orp-medium-r-semicondensed--12-110-75-75-c-60-iso10646-1'
+ACCCENT="#6688aa"
+
+# groups() {
+#     cur=`xprop -root _NET_CURRENT_DESKTOP | awk '{print $3}'`
+#     tot=`xprop -root _NET_NUMBER_OF_DESKTOPS | awk '{print $3}'`
+# 
+# for w in `seq 0 $((cur - 1))`; do line="${line}${spec2}%{-u} ○ "; done
+#     line="${line}${spec3}%{U#6688aa}%{+u} ● "
+#     for w in `seq $((cur + 2)) $tot`; do line="${line}${spec2}%{-u} ○ "; done
+#     echo $line
+# }
+
+desk()
+{
+	#number of currently active workspace
+	cur=$( xprop -root _NET_CURRENT_DESKTOP | awk '{print $3}' )
+
+	#incremented by 1, because 0th member in $wss is the whole array(useless)
+	cur=$((cur+1))
+
+	#gives array of all active workspaces' labels
+	wss=$( xprop -root _NET_DESKTOP_NAMES | cut -c34-100 | tr -d '"' | tr -d ',' )
+
+	#number of active workspaces
+	wss_count=${#wss[@]}
+
+	#Label of the current workspace(could possibly be shortened by using $wss, since the beginning is the same)
+	cur_ws=$( xprop -root _NET_DESKTOP_NAMES | cut -c34-100 | tr -d '"' | tr -d ',' | awk '{print $($cur)}' )
+
+	#A counter used to indicate when we reached the active workspace(there are probably better ways)
+	declare -i n=1
+
+	#Iterates thru $wss array and prints the labels in one line(\c) while indicating the current one
+	for x in $wss;
+	do
+		if [ "$cur" == "$n" ]
+		then
+			echo -e "${AC}$moveto $x${AB}%{U$ACCCENT}%{+u} $x %{-u} ${AE}\c"
+		else
+			echo -e "${AC}$moveto $x${AB} $x  ${AE}\c"
+		fi
+		n=$((n+1))
+	done
+}
+
+
+clock() {
+    date '+%Y-%m-%d %H:%M'
+}
+
+while :; do
+	echo -e "${buf}%{l} ${fg}$(desk) %{r}${fg}${spec1}☼ ${fg}$(clock) "
+	sleep 0.1
+done | lemonbar -f "$glyph" -f "$font" -B\#ff222222 -U\#ff6688aa -u 3px -d -g x18
+

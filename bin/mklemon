@@ -1,0 +1,53 @@
+#!/bin/bash
+
+fg="%{F#FFFFFFFF}"
+bg="%{F#FF111111}"
+brown="%{F#FF669966}"
+magenta="%{F#FFbf9986}"
+blue="%{F#FF115050}"
+yellow="%{F#FF94b885}"
+
+
+groups() {
+    cur=`xprop -root _NET_CURRENT_DESKTOP | awk '{print $3}'`
+    tot=`xprop -root _NET_NUMBER_OF_DESKTOPS | awk '{print $3}'`
+
+for w in `seq 0 $((cur - 1))`; do line="${line}$blue"; done
+    line="${line}$yellow"
+    for w in `seq $((cur + 2)) $tot`; do line="${line}$blue"; done
+    echo $line
+}
+
+<<'COMMENT'
+volume() {
+    amixer get Master | sed -n 'N;s/^.*\[\([0-9]\+%\).*$/\1/p'
+}
+COMMENT
+
+clock() {
+    date '+%H:%M'
+}
+
+# Workspaces
+while :; do
+	buf=""
+	buf="${buf}  	%{l}$fg $(groups) " 
+	
+	echo $buf
+	sleep 0.1
+done | lemonbar -f '-misc-orp-medium-r-semicondensed--12-110-75-75-c-60-iso10646-1' -f '-wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1' -B\#ff111111 -d -g 150x30+30+30
+
+# Border
+lemonbar -B\#ff447744 -d -g 154x34+28+28
+
+# Clock
+while :; do
+	buf=""
+	buf="${buf} 	%{l}$brown $fg $(clock) "
+
+	echo $buf
+	sleep 0.1
+done | lemonbar -f '-misc-orp-medium-r-semicondensed--12-110-75-75-c-60-iso10646-1' -f '-wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1' -B\#ff111111 -d -g 150x30+1740+30
+
+# Border
+lemonbar -B\#ff447744 -d -g 330x40+795+25

@@ -1,0 +1,2 @@
+#/bin/bash
+lemonbar -B\#ff447744 -d -g 330x40+795+25

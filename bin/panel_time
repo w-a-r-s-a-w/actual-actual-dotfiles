@@ -1,0 +1,19 @@
+#!/bin/bash
+
+fg="%{F#FFc2c2b0}"
+bg="%{F#FF222222}"
+spec1="%{F#FF6688aa}"
+spec2="%{F#FF8181a6}"
+spec3="%{F#FF8f6f8f}"
+
+clock() {
+    date '+%Y-%m-%d %H:%M'
+}
+
+while :; do
+	buf=""
+	buf="${buf}%{c}${spec1}☼ ${fg}$(clock)"
+	
+	echo $buf
+	sleep 0.1
+done | lemonbar -f '-misc-orp-medium-r-semicondensed--12-110-75-75-c-60-iso10646-1' -B\#ff222222 -d -g 150x20+1674+37

@@ -1,0 +1,2 @@
+#!/bin/zsh
+urxvtc -e zsh -c tmux attach

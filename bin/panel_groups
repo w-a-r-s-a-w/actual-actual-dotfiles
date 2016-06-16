@@ -1,0 +1,25 @@
+#!/bin/bash
+
+fg="%{F#FFc2c2b0}"
+bg="%{F#FF222222}"
+spec1="%{F#FF6688aa}"
+spec2="%{F#FF8181a6}"
+spec3="%{F#FF8f6f8f}"
+
+groups() {
+    cur=`xprop -root _NET_CURRENT_DESKTOP | awk '{print $3}'`
+    tot=`xprop -root _NET_NUMBER_OF_DESKTOPS | awk '{print $3}'`
+
+for w in `seq 0 $((cur - 1))`; do line="${line}${spec2} ○ "; done
+    line="${line}${spec3} ● "
+    for w in `seq $((cur + 2)) $tot`; do line="${line}${spec2} ○ "; done
+    echo $line
+}
+
+while :; do
+	buf=""
+	buf="${buf}%{c}${fg}$(groups)"
+	
+	echo $buf
+	sleep 0.1
+done | lemonbar -f '-misc-orp-medium-r-semicondensed--12-110-75-75-c-60-iso10646-1' -f '-wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1' -B\#ff222222 -d -g 150x20+96+37

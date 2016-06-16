@@ -1,0 +1,6 @@
+#!/bin/bash
+if [[ -e /opt/icecat/run-icecat.sh ]]
+then
+	cd /opt/icecat/
+	./run-icecat.sh
+fi &>/dev/null &

@@ -1,0 +1,4 @@
+#!/bin/bash
+.panel_groups
+
+lemonbar -f "$glyph" -f "$font" -B\#ff222222 -g 1920x20
